@@ -7,6 +7,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Collected Data</title>
   <link href="/dist/output.css" rel="stylesheet">
+  <!-- Firebase SDK -->
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
 </head>
 
 <body>
@@ -67,11 +71,11 @@
               border-gray-300
               shadow-sm
               focus:border-indigo-300 focus:ring focus:ring-amber-200 focus:ring-opacity-50
-            " fdprocessedid="29crmm">
-                  <option>Corporate event</option>
-                  <option>Wedding</option>
-                  <option>Birthday</option>
-                  <option>Other</option>
+            " fdprocessedid="29crmm" id="eventType">
+                  <option value="Corporate event">Corporate event</option>
+                  <option value="Wedding">Wedding</option>
+                  <option value="Birthday">Birthday</option>
+                  <option value="Other">Other</option>
                 </select>
               </label>
               <label class="block">

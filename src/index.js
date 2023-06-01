@@ -25,11 +25,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Save the form data to Firebase
     var database = firebase.database();
-    var dataRef = database.ref('formSubmissions'); // Replace with your desired database path
+    var dataRef = database.ref('forms'); // Replace with your desired database path
 
     dataRef.push(formData)
       .then(function () {
         console.log('Form data stored in Firebase successfully!');
+        alert("The form Data is sotred in Firebase successfully!")
         // Optionally, you can reset the form after submitting
         contactForm.reset();
       })
